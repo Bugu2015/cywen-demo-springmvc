@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cywen.demo.springmvc.dao.HbOrderMapper">
+
+    <select id="queryById" resultType ="HbOrder" parameterType = "java.lang.Long">
+		select t.* from hb_order t where t.id=#{id}
+	</select>
+
+    <select id="queryAllList" resultType ="HbOrder">
+		select t.* from hb_order t
+	</select>
+
+</mapper>
+
