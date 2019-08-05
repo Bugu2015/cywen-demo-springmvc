@@ -10,5 +10,9 @@
 		select t.* from hb_order t
 	</select>
 
+	<select id="update" parameterType="HbOrder">
+		update hb_order set is_delete = #{isDelete} where id = #{id}
+	</select>
+
 </mapper>
 

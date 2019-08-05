@@ -8,4 +8,6 @@ public interface BaseMapper<T> {
 
     List<T> queryAllList();
 
+    Long update(T t);
+
 }

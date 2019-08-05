@@ -87,7 +87,10 @@ public class MyAspect {
         } catch (Throwable e) {
             //异常通知
             System.out.println("this method "+methodName+" end.ex message<"+e+">");
-            throw new RuntimeException(e);
+            IndexModel indexModel = new IndexModel();
+            indexModel.setMessage("exception throws. check it out!");
+            return indexModel;
+            //throw new RuntimeException(e);
         }
         //后置通知
         System.out.println("The method "+ methodName+" end.");
