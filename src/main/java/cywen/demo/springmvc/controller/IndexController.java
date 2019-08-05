@@ -1,6 +1,7 @@
 package cywen.demo.springmvc.controller;
 
 import cywen.demo.springmvc.IndexModel;
+import cywen.demo.springmvc.PreventRepeat;
 import cywen.demo.springmvc.service.IndexService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -16,6 +17,7 @@ public class IndexController {
     @Autowired
     private IndexService indexService;
 
+    @PreventRepeat
     @RequestMapping("/")
     public String home(){
         log.info("info");
