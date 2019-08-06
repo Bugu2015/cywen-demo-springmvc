@@ -1,6 +1,7 @@
 package cywen.demo.springmvc.controller;
 
-import cywen.demo.springmvc.IndexModel;
+import cywen.demo.springmvc.BaseResult;
+import cywen.demo.springmvc.MyContext;
 import cywen.demo.springmvc.PreventRepeat;
 import cywen.demo.springmvc.service.IndexService;
 import org.apache.commons.logging.Log;
@@ -26,10 +27,16 @@ public class IndexController {
     }
 
     @RequestMapping("/test")
-    public IndexModel test(){
-        IndexModel indexModel = new IndexModel();
-        indexModel.setData(indexService.test());
-        return indexModel;
+    public BaseResult test(){
+        return BaseResult.buildSuccess(indexService.test());
+    }
+
+    @RequestMapping("/test2")
+    public BaseResult test2(){
+        indexService.test21();
+        indexService.test22();
+        indexService.test23();
+        return BaseResult.buildSuccess(MyContext.getRequestParam());
     }
 
 

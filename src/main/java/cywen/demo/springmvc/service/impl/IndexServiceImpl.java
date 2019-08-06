@@ -1,5 +1,6 @@
 package cywen.demo.springmvc.service.impl;
 
+import cywen.demo.springmvc.MyContext;
 import cywen.demo.springmvc.dao.HbOrderMapper;
 import cywen.demo.springmvc.model.HbOrder;
 import cywen.demo.springmvc.service.IndexService;
@@ -7,8 +8,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @Service("indexService")
 @Transactional(rollbackFor = {Exception.class})
@@ -34,4 +38,26 @@ public class IndexServiceImpl implements IndexService {
         }
         return hbOrder.toString();
     }
+
+    @Async
+    @Override
+    public String test21() {
+        log.info("test21 : " + MyContext.getRequestParam());
+        return null;
+    }
+
+    @Async
+    @Override
+    public String test22() {
+        log.info("test22");
+        return null;
+    }
+
+    @Async
+    @Override
+    public String test23() {
+        log.info("test23");
+        return null;
+    }
+
 }

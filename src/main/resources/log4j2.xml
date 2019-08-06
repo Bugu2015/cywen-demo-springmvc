@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
     <properties>
-        <property name="defaultPattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c - %m%n</property>
+        <property name="defaultPattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %p (%F:%line) %traceId # %m%n</property>
         <property name="logDir">D:/logs</property>
     </properties>
 
