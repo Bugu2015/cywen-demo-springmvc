@@ -1,4 +1,4 @@
-package cywen.demo.springmvc;
+package cywen.demo.springmvc.common;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

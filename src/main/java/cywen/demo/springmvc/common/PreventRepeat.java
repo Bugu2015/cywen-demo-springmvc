@@ -1,4 +1,4 @@
-package cywen.demo.springmvc;
+package cywen.demo.springmvc.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

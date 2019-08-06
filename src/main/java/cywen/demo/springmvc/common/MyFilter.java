@@ -1,4 +1,4 @@
-package cywen.demo.springmvc;
+package cywen.demo.springmvc.common;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

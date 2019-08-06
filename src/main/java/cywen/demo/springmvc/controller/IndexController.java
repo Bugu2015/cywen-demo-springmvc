@@ -1,8 +1,8 @@
 package cywen.demo.springmvc.controller;
 
-import cywen.demo.springmvc.BaseResult;
-import cywen.demo.springmvc.MyContext;
-import cywen.demo.springmvc.PreventRepeat;
+import cywen.demo.springmvc.common.BaseResult;
+import cywen.demo.springmvc.common.MyContext;
+import cywen.demo.springmvc.common.PreventRepeat;
 import cywen.demo.springmvc.service.IndexService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

@@ -1,4 +1,4 @@
-package cywen.demo.springmvc;
+package cywen.demo.springmvc.common;
 
 import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.config.plugins.Plugin;

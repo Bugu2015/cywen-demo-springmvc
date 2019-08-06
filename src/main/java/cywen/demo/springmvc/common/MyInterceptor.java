@@ -1,4 +1,4 @@
-package cywen.demo.springmvc;
+package cywen.demo.springmvc.common;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

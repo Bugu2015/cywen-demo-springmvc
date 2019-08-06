@@ -1,6 +1,6 @@
 package cywen.demo.springmvc.service.impl;
 
-import cywen.demo.springmvc.MyContext;
+import cywen.demo.springmvc.common.MyContext;
 import cywen.demo.springmvc.dao.HbOrderMapper;
 import cywen.demo.springmvc.model.HbOrder;
 import cywen.demo.springmvc.service.IndexService;
@@ -11,8 +11,6 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @Service("indexService")
 @Transactional(rollbackFor = {Exception.class})
